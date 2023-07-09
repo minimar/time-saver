@@ -5,7 +5,7 @@ The Binding Of Isaac has a couple very tedious things you can do in your game to
 Time Saver currently contains the following features:
 
 * Automatically destroys all poop and fire in a room once completed.
-* Automatically destroys all rocks, pots, etc. in a room if the player has gained an 'infinite bombs/destroyer' item (ipecac, dr. fetus, terra, etc)
+* Automatically destroys all rocks, pots, etc. in a room if the player has gained an 'infinite bombs/destroyer' item (ipecac, dr. fetus, terra, etc) upon pressing hotkey (G)
 
 Only tested as working in Repentance. YMMV with any other version of the game.
 
