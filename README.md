@@ -14,3 +14,5 @@ Only tested as working in Repentance. YMMV with any other version of the game.
 * Clean up terrible code
 * Mod config menu compatibility to change hotkey
 * Check tear flags instead of specific items manually, for compatibility and cleaner code
+
+I will not personally be uploading this mod to Modding Of Isaac or the Steam Workshop. You are free to do so yourself, but please link back to this repository.
