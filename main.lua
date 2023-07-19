@@ -41,7 +41,7 @@ end
 function checkBombStatus()
   local player = Isaac.GetPlayer()
   --TODO: Magic numbers are bad! Also a monstrosity.
-  if (player:HasGoldenBomb() == true) or (player:HasCollectible(149) == true) or (player:HasCollectible(52) == true) or (player:HasCollectible(168) == true) or (player:HasCollectible(378) == true) or (player:HasCollectible(592) == true) or (player:HasCollectible(604) == true) or (player:HasCollectible(463) == true) or (player:HasCollectible(314) == true) then
+  if (player:HasGoldenBomb() == true) or (player:HasCollectible(149) == true) or (player:HasCollectible(52) == true) or (player:HasCollectible(168) == true) or (player:HasCollectible(378) == true) or (player:HasCollectible(592) == true) or (player:HasCollectible(604) == true) or (player:HasCollectible(463) == true) or (player:HasCollectible(314) == true) or (player:HasCollectible(321) == true) then
     return true
   else
     return false
