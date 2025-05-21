@@ -41,11 +41,29 @@ end
 function checkBombStatus()
   local player = Isaac.GetPlayer()
   --TODO: Magic numbers are bad! Also a monstrosity.
-  if (player:HasGoldenBomb() == true) or (player:HasCollectible(149) == true) or (player:HasCollectible(52) == true) or (player:HasCollectible(168) == true) or (player:HasCollectible(378) == true) or (player:HasCollectible(592) == true) or (player:HasCollectible(604) == true) or (player:HasCollectible(463) == true) or (player:HasCollectible(314) == true) or (player:HasCollectible(321) == true) then
+  local destroyingItems = {
+    {"3 Dollar Bill",191},
+    {"Dr. Fetus",52},
+    {"Epic Fetus",168},
+    {"Ipecac",149},
+    {"Leo",302},
+    {"Samson's Chain", 321},
+    {"Thunder Thighs", 314},
+    {"Fruit Cake",418},
+    {"Number Two",378},
+    {"Sulfuric Acid",463},
+  }
+  local bombStatus = false
+  if (player:HasGoldenBomb() == true) then
     return true
-  else
-    return false
   end
+  for index,value in ipairs(destroyingItems) do
+    if player:HasCollectible(value[2]) then
+      bombStatus = true
+      break
+    end
+  end
+  return bombStatus
 end
 
 mod:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, function()
